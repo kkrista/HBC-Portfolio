@@ -1,0 +1,91 @@
+html {
+    font-size: 62.5%;
+}
+
+#wrapper {
+    border: solid gray 1px;
+    max-width: 590px;
+    padding: 5rem 3rem 1rem 3rem;
+}
+#eka {
+    background-color: rgba(85, 172, 243, 0.459);
+    position: absolute;
+    top: 0rem;
+    left: 10rem;
+    width: 380px;
+    height: 165px;
+    z-index: -9;
+    animation-name: liikkuva;
+    animation-duration: 10s;
+    animation-direction:reverse; 
+}
+
+@keyframes liikkuva {
+    0%   {background-color:none; height:165px;left:100px; top:0px;}
+    50%  {background-color:none; height:165px;left:100px; top:0px;}
+    100% {background-color:none; height:100px;left:100px; top:-200px;}
+}
+
+
+#toka {
+    background-color: ;
+    position: absolute;
+    background-color: rgba(145, 241, 81, 0.466);
+    width: 120px;
+    height: 185px;
+    top: 8rem;
+    left: 20rem;
+    z-index: -8;
+    animation-name: levea;
+    animation-duration: 8s;
+    animation-direction: initial; 
+}
+
+@keyframes levea {
+    from {left: -100px; background-color: none;}
+    to {left: 200px; background-color: none;}
+}
+
+#kolmas {
+    border: solid 1rem orange;
+    border-radius: 3rem;
+    padding: 3rem 0 7.5rem 2rem;
+
+}
+h1 {
+    font-size: 4.4rem;
+    padding: 0 0 0.5rem 2rem;
+
+}
+#kappale1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 13px;
+    padding: 0 0.5rem 0.5rem 5rem;
+    
+}
+#kappale2 {
+    letter-spacing: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(78, 34, 236);
+    font-size: 2rem;
+    padding: 0 0.5rem 0.5rem 5rem;
+
+}
+.magenta {
+    letter-spacing: 10px;
+    background-color: rgb(179, 10, 167);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: white;
+    font-size: 1.7rem;
+
+}
+figure, p{
+
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slid;
+}

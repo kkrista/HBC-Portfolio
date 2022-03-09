@@ -1,0 +1,196 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+}
+
+#special {
+    background-color: #0e5870;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-image: url(./images/special-bg.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+.pretzel {
+    max-width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    background-image: url(./images/grunge.png);
+    max-width: 960px;
+    
+}
+
+.topNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.topNav > * {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.logo {
+    flex-basis: 100%;
+}
+
+#boldParagraph {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    
+}
+
+h1 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+
+}
+
+.lista {
+    column-count: 2;
+    list-style: disc;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+footer {
+    padding-top: 3.3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Kaikki kuvat responsiiviseksi */
+
+figure {
+    display: block;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+#logo {
+    
+}
+
+#pretzel {
+    max-width: 100%;
+}
+
+#callout {
+    background-color: rgb(238, 217, 159);
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.sideList {
+    margin: 2rem;
+}
+
+#bottomText {
+    margin: 2rem 2rem;
+}
+
+hr {
+    border-color: burlywood;
+    border-bottom: none;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+
+
+/* Tabletin sännöt */
+@media only screen and (min-width: 426px) {
+    body {
+      background-color: rgb(255, 146, 213);
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        position: absolute;
+        padding-bottom: 4rem;
+    }
+
+    .topNav {
+        width: 82%;
+        float: right;
+        font-size: 1.3rem;
+        top: 0;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    #main {
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* Laptopin säännöt */
+@media only screen and (min-width: 769px) {
+    body {
+      background-color: rgb(253, 213, 244);
+    }
+
+    #main {
+        float: left;
+        width: 60%;
+        display: block;
+        padding-top: 3rem;
+    }
+
+    .pretzel {
+        width: 100%;
+    }
+
+    .sidebar {
+        float: right;
+        width: 39%;
+        display: block;
+        padding-top: 3rem;
+    }
+
+    footer {
+        padding-top: 2rem;
+        clear: both;
+    }
+
+    .logo {
+        float: left;
+        width: 20%;
+        position: absolute;
+    }
+
+    .topNav {
+        width: 82%;
+        float: right;
+        font-size: 1.3rem;
+        top: 0;
+        padding-top: 4rem;
+    }
+        
+}
+
+

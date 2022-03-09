@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 400px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+}
+
+.container {
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    border: solid black 1px;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right, gainsboro, white);
+    padding: 1em;
+}
+
+.container .heading {
+    float: right;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.container .image {
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.container .image img {
+    padding: 5px;
+    border-left: 1px solid darkcyan;
+    border-top: 1px solid lightgrey;
+    border-right: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    background-color: white;
+    box-shadow: darkgray 3px;
+}
+
+.container .text {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.container .heading h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 98px 162px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "kuva otsikko"
+    "kuva teksti";
+}
+
+.tampere {
+    grid-template-columns: 162px 98px;
+    grid-template-areas: 
+    "otsikko kuva"
+    "teksti kuva";
+}
+
+.clearfix .image {
+    grid-area: kuva;
+    grid-row: 1 / span 2;
+}
+
+.clearfix .heading {
+    grid-area: otsikko;
+    margin-bottom: 10px;
+    font-size: 130%;
+    letter-spacing: 1px;
+    color: black;
+    margin-left: 2rem;
+}
+
+.clearfix .text {
+    grid-area: teksti;
+    font-size: 85%;
+    line-height: 1.5em;
+    color: darkcyan;
+    margin-left: 2rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        min-width: 320px;
+        padding: 10px;
+        margin: 1rem;
+    }
+}

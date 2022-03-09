@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    var myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+    year: 1969,
+    color: 'pink',
+    };
+
+     // four variables are created and assigned in a single go,
+     // separated by commas
+    var myObj = new Object(),
+    str = 'myString',
+    rand = Math.random(),
+    obj = new Object();
+
+myObj.type              = 'Dot syntax';
+myObj['date created']   = 'String with space';
+myObj[str]              = 'String value';
+myObj[rand]             = 'Random Number';
+myObj[obj]              = 'Object';
+myObj['']               = 'Even an empty string';
+
+console.log(myObj);
+
+
+var propertyName = 'make';
+myCar[propertyName] = 'Ford';
+
+propertyName = 'model';
+myCar[propertyName] = 'Mustang';
+
+function showProps(obj, objName) {
+  var result = ``;
+  for (var i in obj) {
+    // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+    if (obj.hasOwnProperty(i)) {
+      result += `${objName}.${i} = ${obj[i]}\n`;
+    }
+  }
+
+  console.log(result);
+  return result;
+}
+
+showProps(myCar, "myCar");
+
+
+function listAllProperties(o) {
+	var objectToInspect;
+	var result = [];
+
+	for(objectToInspect = o; objectToInspect !== null;
+           objectToInspect = Object.getPrototypeOf(objectToInspect)) {
+        result = result.concat(
+            Object.getOwnPropertyNames(objectToInspect)
+        );
+    }
+    
+	return result;
+}
+
+const Manager = {
+  name: "John",
+  age: 27,
+  job: "Software Engineer"
+}
+const Intern = {
+  name: "Ben",
+  age: 21,
+  job: "Software Engineer Intern"
+}
+
+function sayHi() {
+    console.log('Hello, my name is', this.name)
+}
+
+// add sayHi function to both objects
+Manager.sayHi = sayHi;
+Intern.sayHi = sayHi;
+
+Manager.sayHi() // Hello, my name is John'
+Intern.sayHi() // Hello, my name is Ben'
+
+function howOldAmI (){
+  console.log('I am ' + this.age + ' years old.')
+}
+Manager.howOldAmI = howOldAmI;
+Manager.howOldAmI() // I am 27 years old.
+
+// Creates a new object, myobj, with two properties, a and b.
+var myobj = new Object;
+myobj.a = 5;
+myobj.b = 12;
+
+// Removes the a property, leaving myobj with only the b property.
+delete myobj.a;
+console.log ('a' in myobj); // output: "false"
+
+
+
+// Two variables, two distinct objects with the same properties
+var fruit = {name: 'apple'};
+var fruitbear = {name: 'apple'};
+
+fruit == fruitbear; // return false
+fruit === fruitbear; // return false
+
+// Two variables, a single object
+var fruit = {name: 'apple'};
+var fruitbear = fruit;  // Assign fruit object reference to fruitbear
+
+// Here fruit and fruitbear are pointing to same object
+fruit == fruitbear; // return true
+fruit === fruitbear; // return true
+
+fruit.name = 'grape';
+console.log(fruitbear); // output: { name: "grape" }, instead of { name: "apple" }
+
+</script>
+
+</body>
+</html>

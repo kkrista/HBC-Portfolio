@@ -1,0 +1,327 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: darkgray;
+}
+
+#portfolio {
+    background-image: url('https://source.unsplash.com/9AdeEdYB2yk/1600x900');
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+/* Opacity pois */
+.portfolioFooter {
+    background-color: rgba(7, 6, 6, 0.7);
+    padding: 5rem 7rem;
+    margin: 4rem 3rem 1rem 3rem;
+    display:block;
+}
+
+ol#menu li
+{
+    display:block;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+ol#menu li a {
+    font-style: italic;
+    line-height: 3rem;
+    padding-right:.5em;
+    color: white;
+}
+
+.card {
+    padding: 1rem 2rem;
+    margin: 1rem 1rem 4rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+  
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#columns {
+    background-color: white;
+}
+
+#nykyisyys {
+    overflow: auto;
+    text-align: right;
+    width: 100%;
+}
+
+#tulevaisuus {
+    overflow: auto;
+    width: 100%;
+}
+
+.post-thumb1 {
+    float: right;
+    margin-left: 2rem;
+}
+.post-thumb2 {
+    float: left;
+    margin-right: 2rem;
+}
+.post-thumb img {
+    display: block
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 200%
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 1rem;
+    margin: 2rem 2rem;
+    color: rgb(223, 127, 3);
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+p {
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+hr {
+    border-color: black;
+    border-top: dotted;
+    border-bottom: none;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    
+}
+  
+.topnavi a {
+    float: right;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem 0 0;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+  /* The navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: block;
+}
+
+  
+.active {
+    color: white;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+  
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 1.3rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 0 3rem;
+    font-size: 2rem;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contactTable {
+    margin: 0 0 2rem 3rem;
+    font-size: 1.5rem;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    font-size: 1.3rem;
+    padding: 1.7rem 2rem 4em 2rem;
+    color: white;
+    font-style: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 3.3rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+  
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.submit {
+    padding-bottom: 3rem;
+}
+  
+.containerclass {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+}
+  
+  .col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+/* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media only screen and (max-width: 530px) {
+    body {
+        background-color: green;
+    }
+
+    .topnav {
+        width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .post-thumb1 {
+        margin-right: 1rem;
+    }
+
+    .post-thumb2 {
+        margin-left: 1rem;
+    }
+
+    .post-content2 {
+        margin-top: 2rem;
+
+    }
+
+}
+
+/* Tabletin sännöt */
+@media only screen and (min-width: 426px) {
+    body {
+      background-color: pink;
+    }
+    .topnav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .card > * {
+        flex-grow: 1;
+    }
+
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #portfolio {
+        margin-top: 7rem;
+    }
+}

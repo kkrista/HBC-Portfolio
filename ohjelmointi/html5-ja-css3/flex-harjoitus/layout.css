@@ -1,0 +1,145 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 3, 153);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.header {
+    background-color: #fdc1b9;
+}
+.main {
+    background-color: #fae3e3;
+}
+.aside-1 {
+    background-color: #ebc589;
+}
+.aside-2 {
+    background-color: #ca61ad;
+}
+.footer {
+    background-color: #b8b2a6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.navigointipalkki {
+    padding: 0;
+}
+
+.nav-vanhempi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav-vanhempi > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border: solid gray 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #42244b;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.some {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0 -1rem -1rem -1rem;
+}
+
+.some > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.facebook {
+    background-color: #4867AA;
+}
+
+.twitter {
+    background-color: #5DA9DD;
+}
+
+.email {
+    background-color: grey;
+}
+
+
+
+@media screen and (min-width:426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    .footer {
+        order: 4;
+    }
+}
